@@ -42,7 +42,7 @@ class HouseRepository {
     return [
       House(
         id: '1',
-        name: 'The Havenwood Villa',
+        name: 'The Tatu Villa',
         price: '\$2,500,000',
         imageUrl: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         location: 'Beverly Hills, CA',
@@ -57,7 +57,7 @@ class HouseRepository {
       ),
       House(
         id: '2',
-        name: 'The Ellora Residence',
+        name: 'The Killimani Residence',
         price: '\$1,800,000',
         imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         location: 'Aspen, Colorado',
@@ -72,7 +72,7 @@ class HouseRepository {
       ),
       House(
         id: '3',
-        name: 'Modern Luxury Estate',
+        name: 'Karen Luxury Estate',
         price: '\$3,200,000',
         imageUrl: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         location: 'Malibu, CA',
@@ -87,7 +87,7 @@ class HouseRepository {
       ),
       House(
         id: '4',
-        name: 'Contemporary Haven',
+        name: 'The Urban Oasis',
         price: '\$1,450,000',
         imageUrl: 'https://images.unsplash.com/photo-1600566752355-35792bedcad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         location: 'Austin, TX',

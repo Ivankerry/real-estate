@@ -58,7 +58,7 @@ class _HouseListingScreenState extends State<HouseListingScreen> {
       ),
       // Application branding in center
       title: const Text(
-        'VERALUX',
+        'GetHouse',
         style: TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,

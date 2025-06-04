@@ -133,24 +133,21 @@ class _HouseDetailScreenState extends State<HouseDetailScreen> {
       ),
       child: Padding(
         padding: const EdgeInsets.all(25),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Property title and pricing section
-            _buildPropertyHeader(),
-            const SizedBox(height: 20),
-            // Property specifications and amenities
-            _buildPropertySpecs(),
-            const SizedBox(height: 20),
-            // Additional property images gallery
-            _buildAdditionalImages(),
-            const SizedBox(height: 20),
-            // Property description section
-            _buildDescription(),
-            const Spacer(),
-            // Contact and booking action button
-            _buildContactButton(),
-          ],
+        child: SingleChildScrollView( // Wrap the content in a scrollable view
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildPropertyHeader(),
+              const SizedBox(height: 20),
+              _buildPropertySpecs(),
+              const SizedBox(height: 20),
+              _buildAdditionalImages(),
+              const SizedBox(height: 20),
+              _buildDescription(),
+              const SizedBox(height: 20), // Add spacing instead of Spacer
+              _buildContactButton(),
+            ],
+          ),
         ),
       ),
     );
