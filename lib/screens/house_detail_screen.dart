@@ -11,7 +11,7 @@ class HouseDetailScreen extends StatefulWidget {
 }
 
 class _HouseDetailScreenState extends State<HouseDetailScreen> {
-  // Track current image index for gallery navigation
+  // Tracking current image index for gallery navigation
   int currentImageIndex = 0;
 
   @override

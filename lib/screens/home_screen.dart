@@ -1,4 +1,3 @@
-// screens/home_screen.dart
 import 'package:flutter/material.dart';
 import '../models/house.dart';
 import '../widgets/featured_house_card.dart';
