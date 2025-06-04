@@ -32,35 +32,25 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Construct header section with welcome text and navigation
+  // Adjust the header to reduce spacing
   Widget _buildHeader(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0, bottom: 10.0), // Reduced bottom padding
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Application greeting message
           const Text(
-            'Exceptional',
+            'Best Houses with',
             style: TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
           ),
-          const Text(
-            'Living Starts',
-            style: TextStyle(
-              fontSize: 32,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
-          ),
-          // Action prompt with navigation arrow
           Row(
             children: [
               const Text(
-                'Here',
+                'a Click',
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
@@ -68,7 +58,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 10),
-              // Clickable arrow for navigation to full listings
               GestureDetector(
                 onTap: () {
                   Navigator.push(
@@ -91,20 +80,17 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Create featured properties section with horizontal scroll
+  // Adjust the featured section to reduce spacing
   Widget _buildFeaturedSection(List<House> houses) {
     return SizedBox(
-      height: 280,
+      height: 240, // Reduced height to move the section closer to the header
       child: Column(
         children: [
-          // Section spacing
-          const SizedBox(height: 20),
-          // Horizontal scrollable list of featured properties
+          // Removed or reduced the spacing here
+          const SizedBox(height: 10), // Reduced spacing
           Expanded(
             child: ListView.builder(
-              // Enable horizontal scrolling direction
               scrollDirection: Axis.horizontal,
-              // Add padding to first and last items
               padding: const EdgeInsets.symmetric(horizontal: 20),
               itemCount: houses.length,
               itemBuilder: (context, index) {
@@ -134,6 +120,8 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Add spacing above the "Location" box
+          const SizedBox(height: 5), // Adjust this value as needed
           // Section header with location and view all option
           Padding(
             padding: const EdgeInsets.all(20),

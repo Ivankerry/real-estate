@@ -1,9 +1,7 @@
-// screens/house_detail_screen.dart
 import 'package:flutter/material.dart';
 import '../models/house.dart';
 
 class HouseDetailScreen extends StatefulWidget {
-  // House object containing complete property information
   final House house;
 
   const HouseDetailScreen({super.key, required this.house});
